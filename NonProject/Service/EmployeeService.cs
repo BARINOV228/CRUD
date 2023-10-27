@@ -24,7 +24,7 @@ namespace NonProject.Service
                 Console.WriteLine("User successfully added!");
             }
         }
-        public static /*List<Employee>*/ void GetAllEmployee()
+        public static void GetAllEmployee()
         {
             using (SqlConnection connect = new SqlConnection(ConnectionString))
             {

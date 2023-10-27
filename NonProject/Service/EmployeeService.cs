@@ -1,10 +1,11 @@
 ﻿using NonProject.DTO;
+using NonProject.Interface;
 using NonProject.Model;
 using System.Data.SqlClient;
 
 namespace NonProject.Service
 {
-    public class EmployeeService
+    public class EmployeeService : IService
     {
         public static string ConnectionString = "Server = DESKTOP-02F3BCI; Database = NonProject; Trusted_Connection = True;";
         public static void CreateEmployee(Employee e)
